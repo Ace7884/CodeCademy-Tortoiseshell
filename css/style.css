@@ -12,13 +12,13 @@ body{
 .containerRow{
     display:flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
-   
+    justify-content: center;
 }
 .containerCol{
     display:flex;
     flex-flow: column nowrap;
     align-items: center;
+    
 }
 .main_banner{
     background-image:url("../img/glasses-bg.png");
@@ -32,7 +32,6 @@ header{
     justify-content: space-between;
     background-color:cadetblue;
     margin-top:1rem; 
-    padding:0rem 1rem;
 }
 nav  {
     display: flex;
@@ -52,11 +51,11 @@ header span , a{
 }
 .logo img{
     height:1.5rem;
-    padding-left:1rem;
+    padding-left:2rem;
 }
 nav span{ 
     font-size:1rem; 
-    padding: 1rem 1rem;
+    padding: 1rem 2rem 1rem 0;
 }
 .notice{
     font-size: 2rem;
@@ -67,5 +66,59 @@ nav span{
     margin-top:10rem;
     background-color:white;
     position:relative;
-    left:13.25rem;
+    left:12.045rem;
+}
+.icon_section{
+    justify-content: center;
+}
+.icon{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height:8rem;
+    width:5rem;
+    margin: 3rem;
+    text-align: center
+}
+.paper img{
+    object-fit: contain;
+    width:3.5rem;
+}
+.ruler img , .truck img {
+    object-fit: contain;
+    width:5rem;
+}
+.heading{
+    align-content: flex-start;
+    width:35%;
+    margin-right:5%;
+}
+.subject{
+    width:10rem;
+    padding:0.5rem 1.25rem;
+    background-color: cadetblue;
+    margin-bottom:1rem;
+}
+h3{
+    width:10rem;
+    font-size:1rem;
+    font-weight: bold;
+    color: white;
+    text-align: left
+}
+.footercontainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:azure;
+    margin-top:5rem;
+}
+footer{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.footercontainer img{
+    height:1.5rem;
+    padding:4rem 1rem 4rem 4rem;
 }
