@@ -20,13 +20,8 @@ body{
     align-items: center;
     
 }
-.main_banner{
-    background-image:url("../img/glasses-bg.png");
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    height:30rem;
-}
+
+
 header{
     display:flex;
     justify-content: space-between;
@@ -57,6 +52,42 @@ nav span{
     font-size:1rem; 
     padding: 1rem 2rem 1rem 0;
 }
+.mobileNav{
+    display:none;
+}
+
+
+@media only screen and (max-width:1035px){
+    .container{
+        width:100%;
+    }
+    header{
+        margin-top:0rem;
+    }
+}
+
+@media only screen and (max-width:608px){
+    .logo span, nav a
+    {
+        display:none;
+    }
+    .logo img{
+        padding-left:1rem;
+    }
+    .mobileNav{
+        display: block;
+        align-self: center;
+        padding:1rem 2rem;
+    }
+}
+
+.main_banner{
+    background-image:url("../img/glasses-bg.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:30rem;
+}
 .notice{
     font-size: 2rem;
     font-weight:bold;
@@ -68,6 +99,43 @@ nav span{
     position:relative;
     left:12.045rem;
 }
+
+
+@media only screen and (max-width:1035px){
+    .main_banner{
+        align-items: flex-end;
+        height:22rem;
+        width: 100%;
+    }
+    .notice{
+        margin-top:5rem;
+        margin-right:2rem;
+        position: static;  
+        padding:0; 
+    }
+    .notice h1{
+        font-size:1.33rem;
+        padding:0.75rem 4rem;
+    }
+}
+@media only screen and (max-width:608px){
+    .main_banner{
+        align-items:stretch;
+        height:17rem;
+        background-position:20%;
+    }    
+    .notice{
+        width:100%;
+        margin-top:9rem;
+    }
+    .notice h1{
+        font-size:1rem;
+        text-align: center;
+        padding:1rem auto;
+
+    }    
+}    
+
 .icon_section{
     justify-content: center;
 }
@@ -88,16 +156,47 @@ nav span{
     object-fit: contain;
     width:5rem;
 }
+
+
+
+@media only screen and (max-width:608px){
+
+    .container.containerRow{
+        flex-direction:column;
+        align-items: center;
+    }
+    
+    .paper{
+        margin-top:3.77rem;
+        margin-bottom:0.77rem;
+    }
+    .ruler{
+        height:5rem;
+        margin:0.77rem;
+    }
+    .truck{
+        height:5rem;
+        margin-top:0.77rem;
+        margin-bottom:3.77rem;
+    }
+    .icon span{
+        font-size:0.77rem;
+    }
+}
+
+
 .heading{
     align-content: flex-start;
     width:35%;
     margin-right:5%;
+    
 }
 .subject{
     width:10rem;
     padding:0.5rem 1.25rem;
     background-color: cadetblue;
     margin-bottom:1rem;
+    
 }
 h3{
     width:10rem;
@@ -105,6 +204,31 @@ h3{
     font-weight: bold;
     color: white;
     text-align: left
+}
+.description{
+    font-size:0.75rem;
+}
+
+@media only screen and (max-width:608px){
+    .heading{
+        margin-right:0;
+        margin-bottom:4rem;
+        padding:0;
+        width:100%;
+    }
+    .subject{
+       width: 100%;
+       padding-right: 0;
+       padding-left: 0;
+    }
+    h3{
+        text-align: center;
+        width: 100%   
+    }
+    .description{
+        margin-left:1rem;
+    }
+   
 }
 .footercontainer{
     display: flex;
@@ -121,4 +245,14 @@ footer{
 .footercontainer img{
     height:1.5rem;
     padding:4rem 1rem 4rem 4rem;
+}
+
+
+@media only screen and (max-width:608px){
+    .footercontainer{
+        justify-content: center;
+    } 
+    footer span{
+        display: none;
+    }
 }
